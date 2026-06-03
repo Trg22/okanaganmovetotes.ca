@@ -3,38 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pictures | Okanagan Move Totes</title>
-    <meta name="description" content="Gallery of our reusable moving totes in action.">
+    <title>Pictures - Okanagan Move Totes</title>
+    <meta name="description" content="See our durable moving totes in action. Gallery of our containers, delivery service, and customer solutions.">
+    
     <style>
-        body { font-family: system-ui; margin: 0; padding: 0; }
-        header { background: linear-gradient(135deg, #f5a800 0%, #ffa600 100%); padding: 20px; color: white; display: flex; justify-content: space-between; align-items: center; }
-        nav { display: flex; gap: 30px; }
-        nav a { color: white; text-decoration: none; font-weight: 500; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
-        .gallery-item { background: #e9e9e9; border-radius: 8px; aspect-ratio: 3/2; display: flex; align-items: center; justify-content: center; font-size: 32px; }
-        footer { background: #333; color: white; padding: 20px; text-align: center; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f5a800;
+            letter-spacing: 2px;
+        }
+        
+        .logo-text {
+            background: linear-gradient(135deg, #f5a800, #ff9500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #f5a800;
+        }
+        
+        /* Gallery */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+        
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .gallery-header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            background: #e0e0e0;
+        }
+        
+        .gallery-item-caption {
+            padding: 15px;
+            background: #f9f9f9;
+        }
+        
+        .gallery-item-caption h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .gallery-item-caption p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        .footer p {
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
-<header>
-    <h2>🟦 Okanagan Move Totes - Gallery</h2>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/pictures">Pictures</a>
-    </nav>
-</header>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">OMT</span>
+            </div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="/pictures.html" class="active">Pictures</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<section class="gallery">
-    <div class="gallery-item">📦</div>
-    <div class="gallery-item">🚚</div>
-    <div class="gallery-item">♻️</div>
-    <div class="gallery-item">✅</div>
-    <div class="gallery-item">👥</div>
-    <div class="gallery-item">🎯</div>
-</section>
+    <div class="gallery-container">
+        <div class="gallery-header">
+            <h1>Our Moving Totes</h1>
+            <p>See our durable, stackable totes in action across the Okanagan</p>
+        </div>
 
-<footer>
-    <p>&copy; 2026 Okanagan Move Totes</p>
-</footer>
+        <div class="gallery-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27c62d?w=500&h=400&fit=crop&q=80" alt="Stack of moving totes">
+                <div class="gallery-item-caption">
+                    <h3>Durable Tote Design</h3>
+                    <p>Our sturdy plastic totes are built to withstand multiple moves and years of storage.</p>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=500&h=400&fit=crop&q=80" alt="Loading moving boxes">
+                <div class="gallery-item-caption">
+                    <h3>Easy Loading</h3>
+                    <p>Lightweight design makes loading and unloading quick and simple for any move.</p>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1594397595649-21ae23d2f3a1?w=500&h=400&fit=crop&q=80" alt="Stacked moving containers">
+                <div class="gallery-item-caption">
+                    <h3>Space-Saving Stacking</h3>
+                    <p>Totes stack neatly for efficient storage and transport across Okanagan routes.</p>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1589834390897-6fda3f82ddc3?w=500&h=400&fit=crop&q=80" alt="Organized labeled boxes">
+                <div class="gallery-item-caption">
+                    <h3>Included Labels</h3>
+                    <p>Every rental includes labels so you can easily organize and identify your items.</p>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=500&h=400&fit=crop&q=80" alt="Moving truck delivery">
+                <div class="gallery-item-caption">
+                    <h3>Reliable Delivery</h3>
+                    <p>We deliver and pick up across Lake Country, Peachland, Summerland, Penticton, Salmon Arm, and Osoyoos.</p>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1545659742-3e4dbaf37a56?w=500&h=400&fit=crop&q=80" alt="Dolly for moving">
+                <div class="gallery-item-caption">
+                    <h3>Dolly Included</h3>
+                    <p>Every rental includes one dolly to make moving your totes easier and faster.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Okanagan Move Totes. All rights reserved.</p>
+            <p>Serving Lake Country, Peachland, Summerland, Penticton, Salmon Arm & Osoyoos</p>
+        </div>
+    </footer>
 </body>
 </html>

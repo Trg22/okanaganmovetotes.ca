@@ -3,35 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okanagan Move Totes | Moving Container Rentals</title>
-    <meta name="description" content="Affordable, durable moving totes for rent. Delivery & pickup across the Okanagan. $125/25 totes + extras. Simple pricing, no deposits.">
-    <meta name="keywords" content="moving totes, moving containers, Okanagan, Kelowna, Penticton, storage">
-    <meta name="author" content="Okanagan Move Totes">
-    <meta property="og:title" content="Okanagan Move Totes | Container Rentals">
-    <meta property="og:description" content="Simple, affordable moving totes. Rent durable containers with delivery across the Okanagan.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://okanaganmovetotes.ca">
-    <link rel="canonical" href="https://okanaganmovetotes.ca">
+    <title>Okanagan Move Totes | Reusable Moving Totes Delivered to Your Door</title>
+    <meta name="description" content="Reusable moving totes delivered to your door. Eco-friendly, $125/week. Serving Kelowna, Penticton, Vernon, Salmon Arm, Osoyoos & the Okanagan.">
+    <meta name="keywords" content="moving totes, moving containers, Okanagan, Kelowna, eco-friendly moving">
     
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Okanagan Move Totes",
-        "description": "Moving tote container rentals in the Okanagan",
-        "url": "https://okanaganmovetotes.ca",
-        "telephone": "",
-        "email": "info@okanaganmovetotes.ca",
-        "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "BC",
-            "addressCountry": "CA",
-            "areaServed": ["Kelowna", "Penticton", "Vernon", "Salmon Arm", "Osoyoos"]
-        },
-        "priceRange": "$125-$250"
-    }
-    </script>
-
     <style>
         * {
             margin: 0;
@@ -40,304 +15,381 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             color: #333;
-            background-color: #f9f9f9;
+            line-height: 1.6;
         }
         
-        /* Navbar */
-        .navbar {
+        /* Yellow Banner */
+        .banner {
+            background-color: #f5a800;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        
+        .banner a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Header/Nav */
+        header {
             background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
         
         .logo {
-            font-size: 1.8rem;
+            width: 50px;
+            height: 50px;
+            background: #f5a800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-weight: bold;
-            color: #f5a800;
-            letter-spacing: 2px;
+            color: white;
+            font-size: 1.2rem;
         }
         
-        .logo-text {
-            background: linear-gradient(135deg, #f5a800, #ff9500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .company-info h1 {
+            font-size: 1.3rem;
+            margin: 0;
+            color: #000;
         }
         
-        .nav-links {
+        .company-info p {
+            margin: 2px 0 0 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        nav {
             display: flex;
             gap: 30px;
             align-items: center;
         }
         
-        .nav-links a {
+        nav a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
         
-        .nav-links a:hover,
-        .nav-links a.active {
+        nav a:hover {
             color: #f5a800;
+        }
+        
+        .get-quote-btn {
+            background: #f5a800;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .get-quote-btn:hover {
+            background: #e09600;
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #f5a800 0%, #ff9500 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-        
-        .hero-btn {
-            display: inline-block;
-            background: white;
-            color: #f5a800;
-            padding: 15px 40px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        
-        .hero-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-        
-        /* Main Container */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            background: linear-gradient(to right, #fef3e6 0%, #fffbf0 100%);
             padding: 60px 20px;
-        }
-        
-        section {
-            margin-bottom: 80px;
-        }
-        
-        h2 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            color: #333;
-            border-bottom: 3px solid #f5a800;
-            padding-bottom: 15px;
-        }
-        
-        /* Features Grid */
-        .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
         }
         
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+        .hero-content h2 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #000;
         }
         
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-card h3 {
-            color: #f5a800;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-        
-        .feature-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        /* Pricing Section */
-        .pricing-box {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-left: 5px solid #f5a800;
-        }
-        
-        .price {
-            font-size: 2rem;
+        .eco-badge {
             color: #f5a800;
             font-weight: bold;
-            margin: 20px 0;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
         }
         
-        .cta-button {
+        .hero-content p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .btn-primary {
             background: #f5a800;
             color: white;
-            padding: 15px 40px;
+            padding: 12px 30px;
             border: none;
-            border-radius: 5px;
-            font-size: 1rem;
+            border-radius: 25px;
             font-weight: bold;
             cursor: pointer;
             transition: background 0.3s;
             text-decoration: none;
             display: inline-block;
-            margin-top: 20px;
         }
         
-        .cta-button:hover {
+        .btn-primary:hover {
             background: #e09600;
         }
         
-        /* Footer */
-        .footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
+        .btn-secondary {
+            background: white;
+            color: #333;
+            padding: 12px 30px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
         }
         
-        .footer p {
-            margin: 10px 0;
+        .btn-secondary:hover {
+            background: #f5a800;
+            color: white;
+            border-color: #f5a800;
+        }
+        
+        .hero-image {
+            background: white;
+            border-radius: 15px;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 3rem;
+            border: 2px dashed #f5a800;
+        }
+        
+        /* Content Sections */
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            color: #f5a800;
+            margin-bottom: 12px;
+        }
+        
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 8px 0;
         }
         
         @media (max-width: 768px) {
-            .hero h1 {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+            
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content h2 {
                 font-size: 2rem;
             }
             
-            .nav-links {
-                gap: 15px;
-                font-size: 0.9rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
+            .hero-buttons {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">OMT</span>
+    <!-- Yellow Banner -->
+    <div class="banner">
+        Questions? Email us at <a href="mailto:hello@okanaganmovetotes.ca">hello@okanaganmovetotes.ca</a>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">📦</div>
+            <div class="company-info">
+                <h1>Okanagan Move Totes</h1>
+                <p>Reusable moving totes delivered to your door</p>
             </div>
-            <nav class="nav-links">
-                <a href="/" class="active">Home</a>
-                <a href="#pricing">Pricing</a>
-                <a href="/pictures.html">Pictures</a>
-                <a href="#contact">Contact</a>
-            </nav>
         </div>
+        <nav>
+            <a href="#pricing">Pricing</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="/pictures.html">Pictures</a>
+            <a href="#faq">FAQ</a>
+            <a href="#tips">Tips</a>
+            <a href="#realtors">Realtors</a>
+            <a href="#quote" class="get-quote-btn">Get a Quote</a>
+        </nav>
     </header>
-
+    
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Moving Made Simple</h1>
-        <p>Durable, stackable totes with delivery & pickup across the Okanagan</p>
-        <a href="#pricing" class="hero-btn">Get Started</a>
+        <div class="hero-content">
+            <div class="eco-badge">ECO-FRIENDLY MOVING. $125/WEEK.</div>
+            <h2>Reusable Moving Tote Rentals in Kelowna & the Okanagan</h2>
+            <p>Clean plastic moving boxes delivered to your door and picked up when you're done. Serving Kelowna, West Kelowna, Vernon, Penticton, Salmon Arm, Osoyoos, and nearby Okanagan communities.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Request a Quote</button>
+                <a href="#pricing" class="btn-secondary">See Pricing</a>
+            </div>
+        </div>
+        <div class="hero-image">📦 Images Coming</div>
     </section>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Features -->
-        <section id="features">
-            <h2>Why Choose Okanagan Move Totes?</h2>
-            <div class="features">
-                <div class="feature-card">
-                    <h3>📦 Durable Totes</h3>
-                    <p>Heavy-duty plastic containers built to last multiple moves. Stackable for easy transport.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🚚 Free Delivery & Pickup</h3>
-                    <p>We deliver and pick up from your location. Rentals up to 4 weeks available.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💰 Simple Pricing</h3>
-                    <p>No hidden fees. Clear pricing with labels and dolly included. Route-based delivery rates.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📍 Serving the Okanagan</h3>
-                    <p>Kelowna, Penticton, Vernon, Lake Country, Salmon Arm, Osoyoos & more.</p>
-                </div>
+    
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <h2>Pricing</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Base Package</h3>
+                <p><strong>$125/week</strong></p>
+                <p>25 moving totes, labels, dolly included. Perfect for most moves.</p>
             </div>
-        </section>
-
-        <!-- Pricing -->
-        <section id="pricing">
-            <h2>Pricing</h2>
-            <div class="pricing-box">
-                <h3>Base Package (25 Totes)</h3>
-                <div class="price">$125</div>
-                <p><strong>Includes:</strong></p>
-                <ul style="margin-left: 20px; margin-top: 15px; line-height: 2;">
-                    <li>25 durable plastic totes</li>
-                    <li>Labeling system</li>
-                    <li>1 dolly for moving</li>
-                    <li>1 week rental</li>
-                </ul>
-                
-                <h3 style="margin-top: 30px;">Additional Costs</h3>
-                <ul style="margin-left: 20px; margin-top: 15px; line-height: 2;">
-                    <li>Additional totes: <strong>$4.50 each</strong></li>
-                    <li>Extra weeks: <strong>$1.25 per tote per week</strong></li>
-                    <li>Delivery surcharge (Lake Country/Peachland/Summerland): <strong>+$20</strong></li>
-                    <li>Delivery surcharge (Penticton/Salmon Arm): <strong>+$45</strong></li>
-                    <li>Delivery surcharge (Osoyoos): <strong>+$80 (50-tote minimum)</strong></li>
-                </ul>
-                
-                <p style="margin-top: 30px; color: #666;"><em>Rental period: minimum 2 weeks, maximum 4 weeks</em></p>
-                
-                <a href="https://square.link/buy/REVIEWINTELS" class="cta-button">Book Your Totes</a>
+            <div class="card">
+                <h3>Additional Totes</h3>
+                <p><strong>$4.50 each</strong></p>
+                <p>Add more totes as needed for larger moves.</p>
             </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <div class="feature-card">
-                <p><strong>Email:</strong> info@okanaganmovetotes.ca</p>
-                <p><strong>Service Area:</strong> Lake Country, Peachland, Summerland, Kelowna, Penticton, Vernon, Salmon Arm, Osoyoos</p>
-                <p style="margin-top: 20px; color: #666;">Questions about your move? Contact us and we'll help you find the right solution.</p>
+            <div class="card">
+                <h3>Extended Rental</h3>
+                <p><strong>$1.25/tote/week</strong></p>
+                <p>Keep your totes for up to 4 weeks. Min 2 weeks.</p>
             </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Request</h3>
+                <p>Get a quote online. Tell us your location and needs.</p>
+            </div>
+            <div class="card">
+                <h3>2. Deliver</h3>
+                <p>We deliver your totes to your door on your schedule.</p>
+            </div>
+            <div class="card">
+                <h3>3. Move</h3>
+                <p>Pack and move using our durable, stackable totes.</p>
+            </div>
+            <div class="card">
+                <h3>4. Pickup</h3>
+                <p>We pick up your totes when you're done.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Are totes included in the price?</h3>
+                <p>Yes! The $125/week package includes 25 totes, labels, and dolly. No hidden fees.</p>
+            </div>
+            <div class="card">
+                <h3>What's the minimum rental period?</h3>
+                <p>Minimum 2 weeks. Maximum 4 weeks per rental.</p>
+            </div>
+            <div class="card">
+                <h3>Do you deliver to my area?</h3>
+                <p>We serve Kelowna, Penticton, Vernon, Salmon Arm, Osoyoos & all surrounding communities.</p>
+            </div>
+            <div class="card">
+                <h3>What if I need more totes?</h3>
+                <p>Add additional totes at $4.50 each. Just let us know!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact/Realtors -->
+    <section class="section" id="realtors">
+        <h2>For Realtors</h2>
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <p>Are you a realtor? Offer your clients eco-friendly moving solutions. Contact us for special realtor pricing and packages.</p>
+            <a href="mailto:hello@okanaganmovetotes.ca" class="btn-primary" style="margin-top: 20px;">Partner With Us</a>
+        </div>
+    </section>
+    
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <p>&copy; 2025 Okanagan Move Totes. All rights reserved.</p>
         <p>Serving the Okanagan from Salmon Arm to Osoyoos</p>
     </footer>

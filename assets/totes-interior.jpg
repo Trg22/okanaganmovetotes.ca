@@ -1,0 +1,25 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Room walls -->
+  <rect width="400" height="300" fill="#fffaf0"/>
+  <!-- Window -->
+  <rect x="10" y="20" width="80" height="80" fill="#87ceeb" stroke="#333" stroke-width="2"/>
+  <!-- Window panes -->
+  <line x1="50" y1="20" x2="50" y2="100" stroke="#333" stroke-width="1"/>
+  <line x1="10" y1="60" x2="90" y2="60" stroke="#333" stroke-width="1"/>
+  <!-- Stacked totes -->
+  <g id="tote-stack">
+    <!-- Bottom row -->
+    <rect x="40" y="150" width="70" height="40" fill="#f5a800" stroke="#333" stroke-width="2"/>
+    <rect x="130" y="150" width="70" height="40" fill="#f5a800" stroke="#333" stroke-width="2"/>
+    <rect x="220" y="150" width="70" height="40" fill="#f5a800" stroke="#333" stroke-width="2"/>
+    <!-- Middle row -->
+    <rect x="40" y="110" width="70" height="40" fill="#ffc166" stroke="#333" stroke-width="2"/>
+    <rect x="130" y="110" width="70" height="40" fill="#ffc166" stroke="#333" stroke-width="2"/>
+    <rect x="220" y="110" width="70" height="40" fill="#ffc166" stroke="#333" stroke-width="2"/>
+    <!-- Top row -->
+    <rect x="40" y="70" width="70" height="40" fill="#f5a800" stroke="#333" stroke-width="2"/>
+    <rect x="130" y="70" width="70" height="40" fill="#f5a800" stroke="#333" stroke-width="2"/>
+  </g>
+  <!-- Text label -->
+  <text x="200" y="260" font-size="18" text-anchor="middle" font-weight="bold" fill="#333">Clean, organized moving space</text>
+</svg>

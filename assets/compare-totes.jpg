@@ -1,0 +1,9 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="200" y="25" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Totes vs. Cardboard Boxes</text>
+  <!-- Left side: Cardboard boxes (bad) -->
+  <text x="100" y="50" font-size="14" font-weight="bold" text-anchor="middle" fill="#d32f2f">Cardboard Boxes</text>
+  <rect x="40" y="70" width="50" height="60" fill="#d2b48c" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <rect x="65" y="65" width="50" height="60" fill="#d2b48c" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <rect x="75" y="60" width="50" height="60" fill="#d2b48c" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <!-- Issues under boxes -->\n  <text x="100" y="180" font-size="12" text-anchor="middle" fill="#d32f2f">❌ Collapses</text>\n  <text x="100" y="200" font-size="12" text-anchor="middle" fill="#d32f2f">❌ Gets wet</text>\n  <text x="100" y="220" font-size="12" text-anchor="middle" fill="#d32f2f">❌ Tape mess</text>\n  <!-- Right side: Reusable totes (good) -->\n  <text x="300" y="50" font-size="14" font-weight="bold" text-anchor="middle" fill="#12b886">Reusable Totes</text>\n  <rect x="240" y="70" width="50" height="60" fill="#f5a800" stroke="#333" stroke-width="2" rx="3"/>\n  <rect x="265" y="65" width="50" height="60" fill="#f5a800" stroke="#333" stroke-width="2" rx="3"/>\n  <rect x="275" y="60" width="50" height="60" fill="#f5a800" stroke="#333" stroke-width="2\" rx=\"3\"/>\n  <!-- Benefits under totes -->\n  <text x=\"300\" y=\"180\" font-size=\"12\" text-anchor=\"middle\" fill=\"#12b886\">✓ Durable</text>\n  <text x=\"300\" y=\"200\" font-size=\"12\" text-anchor=\"middle\" fill=\"#12b886\">✓ Weatherproof</text>\n  <text x=\"300\" y=\"220\" font-size=\"12\" text-anchor=\"middle\" fill=\"#12b886\">✓ Reusable</text>\n</svg>
